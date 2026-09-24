@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecoleta - Coletas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Ecoleta</h1>
+        <p>Solicite uma coleta</p>
+    </header>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="coletas.html">Coletas</a>
+        <a href="pontos.html">Pontos de Coleta</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <a href="login.html">Login</a>
+    </nav>
+    <main>
+        <section class="conteudo">
+            <h2>Solicitar coleta</h2>
+            <p>
+                Preencha os dados abaixo para solicitar uma coleta
+                de resíduos.
+            </p>
+            <form>
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome" required>    
+                </div>
+                <div class="campo">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="endereco" placeholder="Digite o endereço da coleta" required>           >
+                </div>
+                <div class="campo">
+                    <label for="material">Tipo de material</label>
+                    <select id="material" required>
+                        <option value="">
+                            Selecione o material
+                        </option>
+                        <option value="papel">
+                            Papel
+                        </option>
+                        <option value="plastico">
+                            Plástico
+                        </option>
+                        <option value="vidro">
+                            Vidro
+                        </option>
+                        <option value="metal">
+                            Metal
+                        </option>
+                        <option value="eletronico">
+                            Eletrônicos
+                        </option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="data">Data desejada</label>
+                    <input type="date" id="data" required>               
+                </div>
+                <div class="campo">
+                    <label for="observacao">Observação</label>
+                    <textarea id="observacao" rows="5" placeholder="Digite alguma observação"></textarea>
+                </div>
+                <button type="submit">
+                    Solicitar coleta
+                </button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>2026 - Ecoleta</p>
+    </footer>
+</body>
+</html>
